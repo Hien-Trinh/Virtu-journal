@@ -9,12 +9,12 @@ const Footer = () => {
             <div className={styles.info}>
                 <div className={styles.logo}>
                     <Image
-                        src="/logo.png"
-                        alt="lama blog"
+                        src="/Virtu_small.png" // Change this to the path of Virtù logo
+                        alt="Virtù logo"
                         width={50}
                         height={50}
                     />
-                    <h1 className={styles.logoText}>Lamablog</h1>
+                    <h1 className={styles.logoText}>Virtù</h1>
                 </div>
                 <p className={styles.desc}>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
