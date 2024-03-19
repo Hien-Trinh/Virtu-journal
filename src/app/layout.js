@@ -8,7 +8,7 @@ import ThemeProvider from "@/providers/ThemeProvider"
 // Define a local font
 // NOTE: Require licensing for commercial use
 const myFont = localFont({
-    src: "../antiqua-2-cufonfonts/Book Antiqua.ttf",
+    src: "../antiqua-2-cufonfonts/bookantiqua.ttf",
     display: "swap",
 })
 

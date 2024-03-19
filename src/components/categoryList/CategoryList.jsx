@@ -26,6 +26,7 @@ const CategoryList = async () => {
         { _id: 5, title: "Culture", slug: "culture", img: "/culture.png" },
         { _id: 6, title: "Coding", slug: "coding", img: "/coding.png" },
     ]
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Popular Categories</h1>

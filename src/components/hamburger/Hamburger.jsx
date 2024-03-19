@@ -1,4 +1,5 @@
 "use client"
+
 import Link from "next/link"
 import styles from "./Hamburger.module.css"
 import { useState } from "react"
