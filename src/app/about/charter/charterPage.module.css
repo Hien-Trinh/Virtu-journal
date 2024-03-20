@@ -1,0 +1,94 @@
+.content {
+    display: flex;
+    gap: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 120px;
+    background-color: var(--softBackgroundColor);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+}
+
+.li {
+    padding: 2px 0px;
+}
+
+.articleContent {
+    padding: 20px 0px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.alphaUpper {
+    padding: 5px 0px 100px 45px;
+    list-style-type: upper-alpha;
+}
+
+.number {
+    padding: 5px 0px 20px 30px;
+    list-style-type: decimal;
+}
+
+.alphaLower {
+    padding: 5px 0px 10px 30px;
+    list-style-type: lower-alpha;
+}
+
+.romanLower {
+    padding: 5px 0px 10px 30px;
+    list-style-type: lower-roman;
+}
+
+.hyphen {
+    padding: 5px 0px 10px 30px;
+    list-style-type: "- ";
+}
+
+.nonList {
+    padding: 5px 0px 10px 30px;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 60px 80px;
+    }
+
+    .articleContent {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 40px 60px;
+    }
+
+    .articleContent {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px 40px;
+    }
+
+    .articleContent {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 20px 20px;
+    }
+
+    .articleContent {
+        font-size: 12px;
+    }
+}
