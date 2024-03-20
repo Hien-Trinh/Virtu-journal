@@ -1,0 +1,23 @@
+.title {
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.subtitle {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    color: var(--softTextColor);
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
