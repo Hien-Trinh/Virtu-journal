@@ -1,46 +1,50 @@
 "use client"
 
+import React from "react"
 import styles from "./aboutPage.module.css"
-import Image from "next/image"
 import Link from "next/link"
 import Header from "@/components/header/Header"
-import Featured from "@/components/featured/Featured"
-import Card from "@/components/card/Card"
+import SideMenu from "@/components/aboutComponents/sideMenu/SideMenu"
 
 const AboutPage = () => {
+    const summary =
+        "Virtù, Macalester’s Journal of Transdisciplinary Explorations, is an annual publication led by students. Virtù serves as a platform for showcasing original works of literature, art, and research that align with a designated theme for each edition. Virtù strives to unite various perspectives and experiences from the Macalester community and beyond. The journal's overarching objective is to reveal universal truths that resonate with its readers and writers, promoting clarity and understanding across diverse cultures, borders, academic disciplines, and all manner of divisions."
+
     const aboutSubjects = [
         {
             title: "Charter of Establishment",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             route: "charter",
+        },
+        {
+            title: "Meet the Team",
+            route: "team",
         },
     ]
     return (
-        <div>
+        <div className={styles.container}>
             <Header />
-            <div className={styles.posts}>
-                <h1 className={styles.title}>About Virtù</h1>
-                {aboutSubjects?.map((item) => (
-                    <div>
-                        <div className={styles.textContainer}>
-                            <Link href={`/posts/${item.slug}`}>
-                                <h1>{item.title}</h1>
-                            </Link>
-                            <div
-                                className={styles.desc}
-                                dangerouslySetInnerHTML={{
-                                    __html: item?.desc.substring(0, 60),
-                                }}
-                            />
-                            <Link
-                                href={`/about/${item.route}`}
-                                className={styles.link}
-                            >
-                                Read More
-                            </Link>
-                        </div>
+
+            <div className={styles.content}>
+                <div className={styles.aboutContent}>
+                    <h1 className={styles.title}>About Virtù</h1>
+                    <p className={styles.summary}>{summary}</p>
+                    <div className={styles.aboutSubjects}>
+                        {aboutSubjects?.map((item) => (
+                            <div className={styles.textContainer}>
+                                <Link href={`/about/${item.route}`}>
+                                    <h1>{item.title}</h1>
+                                </Link>
+                                <Link
+                                    href={`/about/${item.route}`}
+                                    className={styles.link}
+                                >
+                                    Read More
+                                </Link>
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </div>
+                <SideMenu currentPage={"About"} />
             </div>
         </div>
     )

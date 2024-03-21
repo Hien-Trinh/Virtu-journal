@@ -1,0 +1,58 @@
+.content {
+    display: flex;
+    gap: 50px;
+}
+
+.teamContent {
+    flex: 5;
+}
+
+.title {
+    text-align: left;
+}
+
+.textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.teamList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.category {
+    color: crimson;
+    font-weight: 500;
+}
+
+.major {
+    color: gray;
+}
+
+.role {
+    padding-left: 20px;
+    color: var(--softTextColor);
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        text-align: center;
+    }
+
+    .textContainer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .detail {
+        text-align: center;
+    }
+
+    .role {
+        padding-left: 0px;
+    }
+}

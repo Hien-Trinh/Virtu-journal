@@ -10,7 +10,7 @@ const Header = () => {
     const imgAlt = "Virtù logo"
 
     return (
-        <div>
+        <div className={styles.container}>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>
             <div className={styles.imgContainer}>

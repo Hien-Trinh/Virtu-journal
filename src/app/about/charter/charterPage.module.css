@@ -3,32 +3,25 @@
     gap: 50px;
 }
 
-.container {
+.charterContent {
+    flex: 5;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 80px 120px;
-    background-color: var(--softBackgroundColor);
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    gap: 50px;
+    list-style-type: none;
+    font-size: 20px;
 }
 
 .title {
-    text-align: center;
+    text-align: left;
 }
 
 .li {
     padding: 2px 0px;
 }
 
-.articleContent {
-    padding: 20px 0px;
-    list-style-type: none;
-    font-size: 20px;
-}
-
 .alphaUpper {
-    padding: 5px 0px 100px 45px;
+    padding: 5px 0px 80px 45px;
     list-style-type: upper-alpha;
 }
 
@@ -57,38 +50,73 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .container {
-        padding: 60px 80px;
-    }
-
-    .articleContent {
+    .charterContent {
         font-size: 18px;
     }
 }
 @media screen and (max-width: 1024px) {
-    .container {
-        padding: 40px 60px;
+    .title {
+        text-align: center;
+    }
+    .charterContent {
+        font-size: 16px;
     }
 
-    .articleContent {
-        font-size: 16px;
+    .alphaUpper {
+        padding: 5px 0px 100px 30px;
+    }
+
+    .number {
+        padding: 5px 0px 20px 20px;
+    }
+
+    .alphaLower {
+        padding: 5px 0px 10px 20px;
+    }
+
+    .romanLower {
+        padding: 5px 0px 10px 20px;
+    }
+
+    .hyphen {
+        padding: 5px 0px 10px 20px;
+    }
+
+    .nonList {
+        padding: 5px 0px 10px 20px;
     }
 }
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 20px 40px;
+    .charterContent {
+        font-size: 14px;
     }
 
-    .articleContent {
-        font-size: 14px;
+    .alphaUpper {
+        padding: 5px 0px 100px 20px;
+    }
+
+    .number {
+        padding: 5px 0px 20px 15px;
+    }
+
+    .alphaLower {
+        padding: 5px 0px 10px 15px;
+    }
+
+    .romanLower {
+        padding: 5px 0px 10px 15px;
+    }
+
+    .hyphen {
+        padding: 5px 0px 10px 15px;
+    }
+
+    .nonList {
+        padding: 5px 0px 10px 15px;
     }
 }
 @media screen and (max-width: 640px) {
-    .container {
-        padding: 20px 20px;
-    }
-
-    .articleContent {
+    .charterContent {
         font-size: 12px;
     }
 }
