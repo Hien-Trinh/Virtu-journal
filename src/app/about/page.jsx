@@ -19,11 +19,14 @@ const AboutPage = () => {
             title: "Meet the Team",
             route: "team",
         },
+        {
+            title: "Thematic Mock-up",
+            route: "theme",
+        },
     ]
     return (
         <div className={styles.container}>
             <Header />
-
             <div className={styles.content}>
                 <div className={styles.aboutContent}>
                     <h1 className={styles.title}>About Virtù</h1>

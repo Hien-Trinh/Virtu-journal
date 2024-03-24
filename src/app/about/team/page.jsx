@@ -8,33 +8,75 @@ const TeamPage = () => {
     const team = [
         {
             name: "Walter Moore",
-            role: "Founder & Editor-in-Chief",
+            role: "Founder & Content Editor",
             major: "International Studies",
-            year: "Freshman",
+            year: "First-Year",
         },
         {
             name: "Khant Wai Yan",
-            role: "Founder & Editor-in-Chief",
+            role: "Founder & Managerial Editor",
             major: "International Studies",
             year: "Junior",
         },
         {
-            name: "Jane Smith",
-            role: "Graphic Designer",
-            major: "Fine Arts",
-            year: "Junior",
-        },
-        {
-            name: "Alex Johnson",
-            role: "Marketing Coordinator",
-            major: "Business Administration",
+            name: "Dean Hu",
+            role: "Content Writer",
+            major: "International Studies",
             year: "Sophomore",
         },
         {
-            name: "Emily Davis",
+            name: "Katie Whelan",
+            role: "Assistant Editor",
+            major: "International Studies",
+            year: "First-year",
+        },
+        {
+            name: "Sydney Stratton",
+            role: "Assistant Editor",
+            major: "International Studies",
+            year: "First-year",
+        },
+        {
+            name: "Cole Conklin",
+            role: "Secretary",
+            major: "International Studies",
+            year: "First-year",
+        },
+        {
+            name: "Colette Lawler",
+            role: "Assistant Editor",
+            major: "Undecided",
+            year: "First-year",
+        },
+        {
+            name: "Nini Yiu",
+            role: "Associate Editor",
+            major: "English Literature",
+            year: "Senior",
+        },
+        {
+            name: "David Trinh",
+            role: "Technologist & Walter's Roommate",
+            major: "Computer Science",
+            year: "First-year",
+        },
+        {
+            name: "Nanami Chesen",
+            role: "Outreach Coordinator",
+            major: "International Studies",
+            year: "Sophomore",
+        },
+        {
+            name: "Adam Rose",
             role: "Content Writer",
             major: "English Literature",
             year: "Senior",
+        },
+        {
+            name: "Yosephine Manihuruk",
+            role: "Associate Editor",
+            major: "International Studies",
+            year: "Sophomore",
         },
     ]
 
@@ -56,10 +98,10 @@ const TeamPage = () => {
                                     </span>
                                 </div>
                                 <div className={styles.textContainer}>
-                                    <h1>{member.name}</h1>
-                                    <h1 className={styles.role}>
+                                    <h2>{member.name}</h2>
+                                    <h2 className={styles.role}>
                                         {member.role}
-                                    </h1>
+                                    </h2>
                                 </div>
                             </div>
                         ))}

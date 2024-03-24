@@ -5,6 +5,7 @@
 
 .teamContent {
     flex: 5;
+    font-size: 20px;
 }
 
 .title {
@@ -24,6 +25,10 @@
     padding-top: 50px;
 }
 
+.detail {
+    font-size: 0.8em;
+}
+
 .category {
     color: crimson;
     font-weight: 500;
@@ -38,7 +43,16 @@
     color: var(--softTextColor);
 }
 
+@media screen and (max-width: 1280px) {
+    .teamContent {
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 1024px) {
+    .teamContent {
+        font-size: 16px;
+    }
+
     .title {
         text-align: center;
     }
