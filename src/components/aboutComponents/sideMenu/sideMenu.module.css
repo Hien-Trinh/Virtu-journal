@@ -1,10 +1,9 @@
 .container {
-    position: relative;
     flex: 2;
 }
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 100px;
 }
 
@@ -56,16 +55,6 @@
     background-color: #5e4fff31;
 }
 
-@media screen and (max-width: 1536px) {
-    .sticky {
-        width: 328.57px;
-    }
-}
-@media screen and (max-width: 1280px) {
-    .sticky {
-        width: 260px;
-    }
-}
 @media screen and (max-width: 1024px) {
     .container {
         display: none;
