@@ -80,11 +80,11 @@ const TeamPage = () => {
                             BY BRUCE SPRINGSTEEN
                         </h3>
                         <br />
-                        Outside the street's on fire in a real death waltz
+                        Outside the street&apos;s on fire in a real death waltz
                         <br />
-                        Between what's flesh and what's fantasy
+                        Between what&apos;s flesh and what&apos;s fantasy
                         <br />
-                        And the poets down here don't write nothing at all
+                        And the poets down here don&apos;t write nothing at all
                         <br />
                         They just stand back and let it all be
                         <br />
@@ -123,7 +123,7 @@ const TeamPage = () => {
                         </h3>
                         <br />
                         <p>
-                            As the Soviet Union's anthem echoed its fading
+                            As the Soviet Union&apos;s anthem echoed its fading
                             proclamation and its flag descended from the Kremlin
                             for the final time in December 1991, the global
                             landscape underwent a profound transformation. The
@@ -152,15 +152,15 @@ const TeamPage = () => {
                         <p className={styles.indented}>
                             The erosion of integrity and credibility has seeped
                             into the core of American civilization, shattering
-                            citizens' confidence across the nation. Once-revered
-                            institutions have lost their standing, evident in
-                            events such as the divisive 2020 Black Lives Matter
-                            protests and the 2021 storming of the U.S. Capitol
-                            by fringe-right groups emboldened by the seditious
-                            rhetoric of then-President Trump. This erosion has
-                            created a trust vacuum, fostering the growth of
-                            perilous populism and fringe political ideologies
-                            that further deepen divisions among
+                            citizens&apos; confidence across the nation.
+                            Once-revered institutions have lost their standing,
+                            evident in events such as the divisive 2020 Black
+                            Lives Matter protests and the 2021 storming of the
+                            U.S. Capitol by fringe-right groups emboldened by
+                            the seditious rhetoric of then-President Trump. This
+                            erosion has created a trust vacuum, fostering the
+                            growth of perilous populism and fringe political
+                            ideologies that further deepen divisions among
                             Americans—neighbors from neighbors, business owners
                             from customers, and colleagues from colleagues.
                         </p>
@@ -178,35 +178,36 @@ const TeamPage = () => {
                         <p>
                             The decline of the United States is not an isolated
                             phenomenon; it pervades the entire classical Western
-                            world, currently the nexus of Giovanni Arrighi's
-                            "Cycle of Accumulation." Europe's recent shift
-                            towards right-wing ideologies amidst systemic
-                            immigration crises mirrors the political landscape
-                            in the United States. This entrenchment of power
-                            hinders the effective management of internal
-                            stability and the direction of social discourse and
-                            development.
+                            world, currently the nexus of Giovanni
+                            Arrighi&apos;s &quot;Cycle of Accumulation.&quot;
+                            Europe&apos;s recent shift towards right-wing
+                            ideologies amidst systemic immigration crises
+                            mirrors the political landscape in the United
+                            States. This entrenchment of power hinders the
+                            effective management of internal stability and the
+                            direction of social discourse and development.
                         </p>
                         <p className={styles.indented}>
                             Moreover, Japan, an external player in the American
                             hegemon and a recent economic powerhouse, faces
                             challenges leading to decline. The mismanagement of
-                            its population's age distribution condemns Japan to
-                            squalor and devastating downturn. The burden on its
-                            diminishing younger generations to care for an
-                            exponentially growing older, retired demographic
-                            spells economic and social deterioration, pointing
-                            toward impending doom in the near future.
+                            its population&apos;s age distribution condemns
+                            Japan to squalor and devastating downturn. The
+                            burden on its diminishing younger generations to
+                            care for an exponentially growing older, retired
+                            demographic spells economic and social
+                            deterioration, pointing toward impending doom in the
+                            near future.
                         </p>
                         <p className={styles.indented}>And on and on.</p>
                         <br />
                         <p>
                             As the influence of the United States and its allies
                             diminishes, traditionally categorized as members of
-                            the "Global South" are on the rise, even as they
-                            endure subtle oppression through "slow violence" —
-                            violence which occurs gradually and is not
-                            necessarily visible, it is “incremental and
+                            the &quot;Global South&quot; are on the rise, even
+                            as they endure subtle oppression through &quot;slow
+                            violence&quot; — violence which occurs gradually and
+                            is not necessarily visible, it is “incremental and
                             accretive” — orchestrated by both nations and
                             non-state entities in the core, aligned with the
                             hegemonic power. Bearing in mind the traumatic and
@@ -235,12 +236,12 @@ const TeamPage = () => {
                             genuinely positive intentions? Or is its aim solely
                             to shift power dynamics, becoming the master of
                             neo-colonialist domination reminiscent of the United
-                            States' current position? Will our global situation
-                            worsen — politically, socially, and economically —
-                            under the leadership of the People’s Republic of
-                            China? Can we anticipate a reduction in violence and
-                            an alleviation of uncertainty with this change in
-                            leadership?
+                            States&apos; current position? Will our global
+                            situation worsen — politically, socially, and
+                            economically — under the leadership of the People’s
+                            Republic of China? Can we anticipate a reduction in
+                            violence and an alleviation of uncertainty with this
+                            change in leadership?
                         </p>
                         <br />
                         <p>
@@ -260,24 +261,25 @@ const TeamPage = () => {
                         <p className={styles.indented}>
                             As time marches on, our world seems to be in a state
                             of unraveling, echoing the prophetic words of Yeats.
-                            The "centre," embodied by the United States, is
-                            struggling to hold, heralding an era of global
-                            uncertainty that will persist until a new "centre"
-                            emerges to take on the mantle of global leadership.
-                            The question is: Who will step forward to define
-                            this new epoch and rebuild the world order after a
-                            period of barbarism, desperation, and uncertainty?
-                            Will the new global order be led by a nation that
-                            aspires towards universal equity, or will it be an
-                            interloper, disguised as a champion of righteousness
-                            but intent on perpetuating chaos and despair? Yeats'
-                            somber description of "The darkness drops again; but
-                            now I know / That twenty centuries of stony sleep /
-                            Were vexed to nightmare by a rocking cradle, / And
-                            what rough beast, its hour come round at last, /
-                            Slouches towards Bethlehem to be born?" (Yeats,
-                            lines 17-22) paints a bleak picture of what may
-                            come.
+                            The &quot;centre,&quot; embodied by the United
+                            States, is struggling to hold, heralding an era of
+                            global uncertainty that will persist until a new
+                            &quot;centre&quot; emerges to take on the mantle of
+                            global leadership. The question is: Who will step
+                            forward to define this new epoch and rebuild the
+                            world order after a period of barbarism,
+                            desperation, and uncertainty? Will the new global
+                            order be led by a nation that aspires towards
+                            universal equity, or will it be an interloper,
+                            disguised as a champion of righteousness but intent
+                            on perpetuating chaos and despair? Yeats&apos;
+                            somber description of &quot;The darkness drops
+                            again; but now I know / That twenty centuries of
+                            stony sleep / Were vexed to nightmare by a rocking
+                            cradle, / And what rough beast, its hour come round
+                            at last, / Slouches towards Bethlehem to be
+                            born?&quot; (Yeats, lines 17-22) paints a bleak
+                            picture of what may come.
                         </p>
                         <p className={styles.indented}>
                             Can we, as a human family, break free from the
@@ -289,7 +291,8 @@ const TeamPage = () => {
                             understanding, cooperation, and progress? Or will we
                             fail, forever condemned to endure chaos, violence,
                             and uncertainty, forever reminiscing about what we
-                            had, never to dream about what "could be" again?
+                            had, never to dream about what &quot;could be&quot;
+                            again?
                         </p>
                     </li>
                 </ul>

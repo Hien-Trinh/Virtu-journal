@@ -12,14 +12,17 @@ const AboutPage = () => {
 
     const aboutSubjects = [
         {
+            _id: 1,
             title: "Charter of Establishment",
             route: "charter",
         },
         {
+            _id: 2,
             title: "Meet the Team",
             route: "team",
         },
         {
+            _id: 3,
             title: "Thematic Mock-up",
             route: "theme",
         },
@@ -33,7 +36,10 @@ const AboutPage = () => {
                     <p className={styles.summary}>{summary}</p>
                     <div className={styles.aboutSubjects}>
                         {aboutSubjects?.map((item) => (
-                            <div className={styles.textContainer}>
+                            <div
+                                key={aboutSubjects._id}
+                                className={styles.textContainer}
+                            >
                                 <Link href={`/about/${item.route}`}>
                                     <h1>{item.title}</h1>
                                 </Link>
