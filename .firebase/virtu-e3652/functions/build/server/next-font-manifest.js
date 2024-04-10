@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/hientrinh/Desktop/nextjs-projects/Virtu-journal/src/app/layout":["static/media/640c8b670445e49d-s.p.ttf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
