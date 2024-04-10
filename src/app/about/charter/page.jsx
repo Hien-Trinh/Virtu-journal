@@ -723,15 +723,15 @@ const CharterPage = () => {
                                                 <p>
                                                     Design and execute surveys
                                                     to gauge the interests and
-                                                    concerns of the college's
-                                                    community.
+                                                    concerns of the
+                                                    college&apos;s community.
                                                 </p>
                                             </li>
                                             <li className={styles.li}>
                                                 <p>
                                                     Analyze survey data to
                                                     identify trends and inform
-                                                    the journal's content
+                                                    the journal&apos;s content
                                                     direction.
                                                 </p>
                                             </li>
@@ -787,8 +787,8 @@ const CharterPage = () => {
                                             <li className={styles.li}>
                                                 <p>
                                                     Design and format the
-                                                    journal's visual branding
-                                                    and aesthetics.
+                                                    journal&apos;s visual
+                                                    branding and aesthetics.
                                                 </p>
                                             </li>
                                             <li className={styles.li}>
@@ -1392,9 +1392,10 @@ const CharterPage = () => {
                                             </li>
                                             <li className={styles.li}>
                                                 <p>
-                                                    Commitment to the journal's
-                                                    ethos and time and effort to
-                                                    dedicate to advising.
+                                                    Commitment to the
+                                                    journal&apos;s ethos and
+                                                    time and effort to dedicate
+                                                    to advising.
                                                 </p>
                                             </li>
                                         </ol>
@@ -1517,7 +1518,7 @@ const CharterPage = () => {
                                     <li className={styles.li}>
                                         <p>
                                             The Treasurer will be in charge of
-                                            managing this organization's
+                                            managing this organization&apos;s
                                             financial affairs. The Treasurer,
                                             Managing Editor, and Secretary will
                                             have access to the student org
@@ -1548,7 +1549,7 @@ const CharterPage = () => {
                                             annual budget will be prepared by
                                             early February of each year, which
                                             will be the Treasurer and Managing
-                                            Editor's responsibility;the
+                                            Editor&apos;s responsibility;the
                                             Executive Board may also play a part
                                             if the need arises.
                                         </p>
