@@ -49,24 +49,6 @@ const SideMenu = ({ currentPage }) => {
                     >
                         Theme
                     </Link>
-                    <Link
-                        href="/blog"
-                        className={`${styles.categoryItem} ${styles.travel}`}
-                    >
-                        Travel
-                    </Link>
-                    <Link
-                        href="/blog"
-                        className={`${styles.categoryItem} ${styles.culture}`}
-                    >
-                        Culture
-                    </Link>
-                    <Link
-                        href="/blog"
-                        className={`${styles.categoryItem} ${styles.coding}`}
-                    >
-                        Coding
-                    </Link>
                 </div>
             </div>
         </div>

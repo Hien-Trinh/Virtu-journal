@@ -5,7 +5,7 @@ import Image from "next/image"
 import Header from "@/components/header/Header"
 import SideMenu from "@/components/aboutComponents/sideMenu/SideMenu"
 
-const TeamPage = () => {
+const ThemePage = () => {
     const imgSrc = "/Vexed_to_Nightmare.png"
     const imgAlt =
         "Vexed to Nightmare - an interpretation of The Second Coming by W B Yeats"
@@ -302,4 +302,4 @@ const TeamPage = () => {
     )
 }
 
-export default TeamPage
+export default ThemePage

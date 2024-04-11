@@ -17,17 +17,18 @@ const Footer = () => {
                     <h1 className={styles.logoText}>Virtù</h1>
                 </div>
                 <p className={styles.desc}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim necessitatibus similique aspernatur obcaecati
-                    veritatis. Aperiam cum porro sequi, totam minima
-                    consequuntur, aspernatur deleniti vero repellendus dorales.
+                    Virtù, Macalester’s Journal of Transdisciplinary
+                    Explorations, is an annual publication led by students. I
+                    build this website so connect with me on{" "}
+                    <Link
+                        href="https://www.linkedin.com/in/hien-trinh-b35a4a206/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        LinkedIn
+                    </Link>{" "}
+                    if you&apos;re cool.
                 </p>
-                <div className={styles.icons}>
-                    <Image src="/facebook.png" alt="" width={18} height={18} />
-                    <Image src="/instagram.png" alt="" width={18} height={18} />
-                    <Image src="/tiktok.png" alt="" width={18} height={18} />
-                    <Image src="/youtube.png" alt="" width={18} height={18} />
-                </div>
             </div>
             <div className={styles.links}>
                 <div className={styles.list}>
@@ -35,44 +36,44 @@ const Footer = () => {
                     <Link href="/" className={styles.link}>
                         Homepage
                     </Link>
-                    <Link href="/" className={styles.link}>
-                        Blog
-                    </Link>
-                    <Link href="/" className={styles.link}>
+                    <Link href="/about" className={styles.link}>
                         About
                     </Link>
-                    <Link href="/" className={styles.link}>
-                        Contact
+                    <Link href="/submit" className={styles.link}>
+                        Submit
                     </Link>
                 </div>
                 <div className={styles.list}>
-                    <span className={styles.listTitle}>Tags</span>
-                    <Link href="/" className={styles.link}>
-                        Style
-                    </Link>
-                    <Link href="/" className={styles.link}>
-                        Fashion
-                    </Link>
-                    <Link href="/" className={styles.link}>
-                        Coding
-                    </Link>
-                    <Link href="/" className={styles.link}>
-                        Travel
-                    </Link>
+                    <span className={styles.listTitle}>About</span>
+                    <Link href="/about/charter">Charter</Link>
+                    <Link href="/about/team">Team</Link>
+                    <Link href="/about/theme">Theme</Link>
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Social</span>
-                    <Link href="/" className={styles.link}>
+                    <Link
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className={styles.link}
+                    >
                         Facebook
                     </Link>
-                    <Link href="/" className={styles.link}>
+                    <Link
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className={styles.link}
+                    >
                         Instagram
                     </Link>
-                    <Link href="/" className={styles.link}>
+                    <Link
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className={styles.link}
+                    >
                         Tiktok
-                    </Link>
-                    <Link href="/" className={styles.link}>
-                        Youtube
                     </Link>
                 </div>
             </div>
