@@ -45,9 +45,15 @@ const Footer = () => {
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>About</span>
-                    <Link href="/about/charter">Charter</Link>
-                    <Link href="/about/team">Team</Link>
-                    <Link href="/about/theme">Theme</Link>
+                    <Link href="/about/charter" className={styles.link}>
+                        Charter
+                    </Link>
+                    <Link href="/about/team" className={styles.link}>
+                        Team
+                    </Link>
+                    <Link href="/about/theme" className={styles.link}>
+                        Theme
+                    </Link>
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Social</span>
