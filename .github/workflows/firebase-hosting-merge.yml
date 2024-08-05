@@ -12,7 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install
-      - name: 🚀 Deploy
-        run: npx firebase-tools deploy --token "$FIREBASE_TOKEN"
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_VIRTU_E3652 }}
+          channelId: live
+          projectId: virtu-e3652
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
