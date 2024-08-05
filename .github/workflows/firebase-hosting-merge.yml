@@ -14,7 +14,8 @@ jobs:
       # - run: npm ci && npm run build
       - name: Install
         # working-directory: functions
-        run: cd .firebase/virtu-e3652/functions && npm i
+        run: ls -la
+        # run: cd .firebase/virtu-e3652/functions && npm i
 
       - name: Build & Deploy 🚀
         run: /usr/local/bin/npx firebase-tools@latest deploy --only hosting --project virtu-e3652
