@@ -1,0 +1,111 @@
+[debug] [2024-08-05T02:48:00.477Z] ----------------------------------------------------------------------
+[debug] [2024-08-05T02:48:00.480Z] Command:       /Users/hientrinh/.nvm/versions/node/v21.2.0/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2024-08-05T02:48:00.481Z] CLI Version:   13.13.0
+[debug] [2024-08-05T02:48:00.481Z] Platform:      darwin
+[debug] [2024-08-05T02:48:00.481Z] Node Version:  v21.2.0
+[debug] [2024-08-05T02:48:00.481Z] Time:          Mon Aug 05 2024 09:48:00 GMT+0700 (Indochina Time)
+[debug] [2024-08-05T02:48:00.481Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-05T02:48:00.482Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-05T02:48:00.543Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-05T02:48:00.543Z] > authorizing via signed-in user (hientrinhminh32@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-08-05T02:48:00.824Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2024-08-05T02:48:00.825Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-05T02:48:00.825Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-08-05T02:48:00.827Z] [hub] writing locator at /var/folders/2v/nvdj3s1j3px47c__0g1rrhzm0000gn/T/hub-virtu-e3652.json
+[debug] [2024-08-05T02:48:00.834Z] > refreshing access token with scopes: []
+[debug] [2024-08-05T02:48:00.835Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-05T02:48:00.835Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-05T02:48:01.624Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-05T02:48:01.625Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-05T02:48:01.632Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652 [none]
+[debug] [2024-08-05T02:48:01.633Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-05T02:48:01.633Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-05T02:48:02.882Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652 200
+[debug] [2024-08-05T02:48:02.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652 {"projectId":"virtu-e3652","projectNumber":"284477716776","displayName":"Virtu","name":"projects/virtu-e3652","resources":{"hostingSite":"virtu-e3652"},"state":"ACTIVE","etag":"1_4ea379e0-5a65-482f-aac0-23fae09f3fa8"}
+[debug] [2024-08-05T02:48:03.807Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/virtu-e3652/sites pageToken=&pageSize=10
+[debug] [2024-08-05T02:48:05.231Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/virtu-e3652/sites 200
+[debug] [2024-08-05T02:48:05.231Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/virtu-e3652/sites {"sites":[{"name":"projects/virtu-e3652/sites/virtu-e3652","defaultUrl":"https://virtu-e3652.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-05T02:48:05.232Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/virtu-e3652/sites 
+[debug] [2024-08-05T02:48:05.694Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/virtu-e3652/sites 200
+[debug] [2024-08-05T02:48:05.694Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/virtu-e3652/sites {"sites":[{"name":"projects/virtu-e3652/sites/virtu-e3652","defaultUrl":"https://virtu-e3652.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-05T02:48:05.695Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652/webApps/-/config [none]
+[debug] [2024-08-05T02:48:06.229Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652/webApps/-/config 200
+[debug] [2024-08-05T02:48:06.229Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652/webApps/-/config {"projectId":"virtu-e3652","storageBucket":"virtu-e3652.appspot.com","apiKey":"AIzaSyBY-z2B_OZVSZTBz26a9CUPEldkqHj5KEY","authDomain":"virtu-e3652.firebaseapp.com","messagingSenderId":"284477716776"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[warn] ⚠  This integration expects Node version 16, 18, or 20. You're running version 21, problems may be encountered. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-08-05T02:48:30.647Z] Error: Command failed: npm i --omit dev --no-audit
+    at genericNodeError (node:internal/errors:956:15)
+    at wrappedFn (node:internal/errors:510:14)
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:371:42)
+    at async Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:306:9)
+    at async /usr/local/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:33:43
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-05T02:52:10.952Z] ----------------------------------------------------------------------
+[debug] [2024-08-05T02:52:10.955Z] Command:       /Users/hientrinh/.nvm/versions/node/v21.2.0/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2024-08-05T02:52:10.956Z] CLI Version:   13.13.0
+[debug] [2024-08-05T02:52:10.956Z] Platform:      darwin
+[debug] [2024-08-05T02:52:10.956Z] Node Version:  v21.2.0
+[debug] [2024-08-05T02:52:10.956Z] Time:          Mon Aug 05 2024 09:52:10 GMT+0700 (Indochina Time)
+[debug] [2024-08-05T02:52:10.956Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-05T02:52:11.015Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-05T02:52:11.016Z] > authorizing via signed-in user (hientrinhminh32@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-08-05T02:52:11.297Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2024-08-05T02:52:11.298Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-05T02:52:11.298Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-08-05T02:52:11.300Z] [hub] writing locator at /var/folders/2v/nvdj3s1j3px47c__0g1rrhzm0000gn/T/hub-virtu-e3652.json
+[debug] [2024-08-05T02:52:11.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652 [none]
+[debug] [2024-08-05T02:52:12.673Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652 200
+[debug] [2024-08-05T02:52:12.673Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/virtu-e3652 {"projectId":"virtu-e3652","projectNumber":"284477716776","displayName":"Virtu","name":"projects/virtu-e3652","resources":{"hostingSite":"virtu-e3652"},"state":"ACTIVE","etag":"1_4ea379e0-5a65-482f-aac0-23fae09f3fa8"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-08-05T02:52:13.630Z] Error: Cannot find module 'next'
+Require stack:
+- /usr/local/lib/node_modules/firebase-tools/lib/frameworks/utils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Function.resolve (node:internal/modules/helpers:187:19)
+    at relativeRequire (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/utils.js:195:34)
+    at getDevModeHandle (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:415:50)
+    at prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:216:20)
+    at async Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:306:9)
+    at async /usr/local/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:33:43
+[error] 
+[error] Error: An unexpected error has occurred.
