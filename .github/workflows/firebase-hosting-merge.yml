@@ -20,9 +20,9 @@ jobs:
       #     projectId: virtu-e3652
       - name: Install
         # working-directory: functions
-        run: cd functions && npm i
+        run: cd .firebase/virtu-e3652/functions && npm i
 
       - name: Build & Deploy 🚀
-        run: cd functions && npx firebase-tools deploy --only functions
+        run: cd .firebase/virtu-e3652/functions && npx firebase-tools deploy --only functions
         # env:
         #   FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
