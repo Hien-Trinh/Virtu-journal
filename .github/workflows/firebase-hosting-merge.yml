@@ -11,10 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_VIRTU_E3652 }}
-          channelId: live
-          projectId: virtu-e3652
+      # - run: npm ci && npm run build
+      # - uses: FirebaseExtended/action-hosting-deploy@v0
+      #   with:
+      #     repoToken: ${{ secrets.GITHUB_TOKEN }}
+      #     firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_VIRTU_E3652 }}
+      #     channelId: live
+      #     projectId: virtu-e3652
+      - name: Install
+        # working-directory: functions
+        run: cd functions && npm i
+
+      - name: Build & Deploy 🚀
+        run: cd functions && npx firebase-tools deploy --only functions
+        # env:
+        #   FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
