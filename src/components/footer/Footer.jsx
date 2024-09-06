@@ -1,7 +1,8 @@
-import React from "react"
-import styles from "./footer.module.css"
 import Image from "next/image"
 import Link from "next/link"
+import styles from "./footer.module.css"
+
+const InstagramURL = "https://www.instagram.com/virtuatmac/"
 
 const Footer = () => {
     return (
@@ -66,7 +67,7 @@ const Footer = () => {
                         Facebook
                     </Link>
                     <Link
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+                        href={InstagramURL}
                         rel="noopener noreferrer"
                         target="_blank"
                         className={styles.link}
