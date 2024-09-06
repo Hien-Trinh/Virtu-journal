@@ -1,33 +1,42 @@
-import styles from "./singlePage.module.css"
+"use client"
+import { db } from "@/utils/firebase"
+import { doc, getDoc } from "firebase/firestore"
 import Image from "next/image"
+import { useEffect, useState } from "react"
+import styles from "./singlePage.module.css"
 
 const getData = async (slug) => {
-    const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
-        cache: "no-store",
-    })
+    const docRef = doc(db, "articles", slug)
+    const docSnap = await getDoc(docRef)
 
-    if (!res.ok) {
-        throw new Error("Failed")
-    }
+    const data = docSnap.data()
 
-    return res.json()
+    return data
 }
 
 // currently static, change when API is ready
-const SinglePage = async ({ params }) => {
+const SinglePage = ({ params }) => {
     const { slug } = params
 
-    // const data = await getData(slug)
+    const [data, setData] = useState(null)
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await getData(slug)
+            setData(data)
+        }
+        fetchData()
+    }, [slug])
 
     return (
         <div className={styles.container}>
             <div className={styles.infoContainer}>
                 <div className={styles.textContainer}>
-                    {/* <h1 className={styles.title}>{data?.title}</h1> */}
-                    <h1 className={styles.title}>
+                    <h1 className={styles.title}>{data?.title}</h1>
+                    {/* <h1 className={styles.title}>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit.
-                    </h1>
+                    </h1> */}
                     <div className={styles.user}>
                         {/* {data?.user?.image && (
                             <div className={styles.userImageContainer}>
