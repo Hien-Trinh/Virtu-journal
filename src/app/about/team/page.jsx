@@ -1,8 +1,8 @@
 "use client"
 
-import styles from "./teamPage.module.css"
-import Header from "@/components/header/Header"
 import SideMenu from "@/components/aboutComponents/sideMenu/SideMenu"
+import Header from "@/components/header/Header"
+import styles from "./teamPage.module.css"
 
 const TeamPage = () => {
     const team = [
@@ -11,70 +11,70 @@ const TeamPage = () => {
             name: "Walter Moore",
             role: "Founder & Content Editor",
             major: "International Studies",
-            year: "First-Year",
+            year: "Sophomore",
         },
         {
             _id: 2,
             name: "Khant Wai Yan",
             role: "Founder & Managerial Editor",
             major: "International Studies",
-            year: "Junior",
+            year: "Senior",
         },
         {
             _id: 3,
             name: "Dean Hu",
             role: "Content Writer",
             major: "International Studies",
-            year: "Sophomore",
+            year: "Junior",
         },
         {
             _id: 4,
             name: "Katie Whelan",
             role: "Assistant Editor",
             major: "International Studies",
-            year: "First-year",
+            year: "Sophomore",
         },
         {
             _id: 5,
             name: "Sydney Stratton",
             role: "Assistant Editor",
             major: "International Studies",
-            year: "First-year",
+            year: "Sophomore",
         },
         {
             _id: 6,
             name: "Cole Conklin",
             role: "Secretary",
             major: "International Studies",
-            year: "First-year",
+            year: "Sophomore",
         },
         {
             _id: 7,
             name: "Colette Lawler",
             role: "Assistant Editor",
             major: "Undecided",
-            year: "First-year",
+            year: "Sophomore",
         },
         {
             _id: 8,
             name: "Nini Yiu",
-            role: "Associate Editor",
+            role: "Sophomore",
             major: "English Literature",
-            year: "Senior",
+            year: "Sophomore",
         },
         {
             _id: 9,
             name: "David Trinh",
             role: "Technologist & Walter's Roommate",
             major: "Computer Science",
-            year: "First-year",
+            year: "Sophomore",
         },
         {
             _id: 10,
             name: "Nanami Chesen",
             role: "Outreach Coordinator",
             major: "International Studies",
-            year: "Sophomore",
+            year: "Junior",
         },
         {
             _id: 11,
@@ -88,7 +88,7 @@ const TeamPage = () => {
             name: "Yosephine Manihuruk",
             role: "Associate Editor",
             major: "International Studies",
-            year: "Sophomore",
+            year: "Junior",
         },
     ]
 
