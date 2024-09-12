@@ -28,6 +28,16 @@ const SinglePage = ({ params }) => {
         fetchData()
     }, [slug])
 
+    console.log(data)
+    const pdf_url = "/ClimateCasino.pdf"
+
+    const [numPages, setNumPages] = useState()
+    const [pageNumber, setPageNumber] = useState(1)
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages)
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.infoContainer}>
@@ -85,32 +95,12 @@ const SinglePage = ({ params }) => {
                     />
                 </div>
             </div>
-            <div className={styles.content}>
-                <div className={styles.post}>
-                    <div
-                        className={styles.description}
-                        // dangerouslySetInnerHTML={{ __html: data?.desc }}
-                        dangerouslySetInnerHTML={{
-                            __html: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. \
-                        Enim necessitatibus similique aspernatur obcaecati \
-                        veritatis. Aperiam cum porro sequi, totam minima \
-                        consequuntur, aspernatur deleniti vero repellendus dorales.Lorem, ipsum dolor sit amet consectetur adipisicing elit. \
-                        Enim necessitatibus similique aspernatur obcaecati \
-                        veritatis. Aperiam cum porro sequi, totam minima \
-                        consequuntur, aspernatur deleniti vero repellendus dorales.Lorem, ipsum dolor sit amet consectetur adipisicing elit. \
-                        Enim necessitatibus similique aspernatur obcaecati \
-                        veritatis. Aperiam cum porro sequi, totam minima \
-                        consequuntur, aspernatur deleniti vero repellendus dorales.Lorem, ipsum dolor sit amet consectetur adipisicing elit. \
-                        Enim necessitatibus similique aspernatur obcaecati \
-                        veritatis. Aperiam cum porro sequi, totam minima \
-                        consequuntur, aspernatur deleniti vero repellendus dorales.Lorem, ipsum dolor sit amet consectetur adipisicing elit. \
-                        Enim necessitatibus similique aspernatur obcaecati \
-                        veritatis. Aperiam cum porro sequi, totam minima \
-                        consequuntur, aspernatur deleniti vero repellendus dorales.",
-                        }}
-                    />
-                </div>
-            </div>
+            <iframe
+                src={data?.pdf_url}
+                width="640"
+                height="480"
+                allow="autoplay"
+            ></iframe>
         </div>
     )
 }

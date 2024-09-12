@@ -1,9 +1,9 @@
-import "./globals.css"
-import localFont from "next/font/local"
-import Navbar from "@/components/navbar/Navbar"
 import Footer from "@/components/footer/Footer"
+import Navbar from "@/components/navbar/Navbar"
 import { ThemeContextProvider } from "@/context/ThemeContext"
 import ThemeProvider from "@/providers/ThemeProvider"
+import localFont from "next/font/local"
+import "./globals.css"
 
 // Define a local font
 // NOTE: Require licensing for commercial use
