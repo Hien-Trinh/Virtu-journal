@@ -28,16 +28,6 @@ const SinglePage = ({ params }) => {
         fetchData()
     }, [slug])
 
-    console.log(data)
-    const pdf_url = "/ClimateCasino.pdf"
-
-    const [numPages, setNumPages] = useState()
-    const [pageNumber, setPageNumber] = useState(1)
-
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages)
-    }
-
     return (
         <div className={styles.container}>
             <div className={styles.infoContainer}>
