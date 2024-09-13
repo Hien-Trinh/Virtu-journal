@@ -2,6 +2,7 @@ import Footer from "@/components/footer/Footer"
 import Navbar from "@/components/navbar/Navbar"
 import { ThemeContextProvider } from "@/context/ThemeContext"
 import ThemeProvider from "@/providers/ThemeProvider"
+import { GoogleTagManager } from "@next/third-parties/google"
 import localFont from "next/font/local"
 import "./globals.css"
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
                     </ThemeProvider>
                 </ThemeContextProvider>
             </body>
+            <GoogleTagManager gtmId="G-343L69EW4Z" />
         </html>
     )
 }

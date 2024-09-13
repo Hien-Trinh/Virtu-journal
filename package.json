@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.0.5-canary.59",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "firebase": "^10.13.1",
