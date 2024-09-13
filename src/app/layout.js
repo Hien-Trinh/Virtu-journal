@@ -22,6 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <GoogleTagManager
+                gtmId={process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}
+            />
             <body className={myFont.className}>
                 <ThemeContextProvider>
                     <ThemeProvider>
@@ -35,7 +38,6 @@ export default function RootLayout({ children }) {
                     </ThemeProvider>
                 </ThemeContextProvider>
             </body>
-            <GoogleTagManager gtmId="G-343L69EW4Z" />
         </html>
     )
 }
