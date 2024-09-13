@@ -2,8 +2,8 @@ import Footer from "@/components/footer/Footer"
 import Navbar from "@/components/navbar/Navbar"
 import { ThemeContextProvider } from "@/context/ThemeContext"
 import ThemeProvider from "@/providers/ThemeProvider"
-import { GoogleTagManager } from "@next/third-parties/google"
 import localFont from "next/font/local"
+import Script from "next/script"
 import "./globals.css"
 
 // Define a local font
@@ -22,9 +22,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <GoogleTagManager
-                gtmId={process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}
-            />
+            <head>
+                <Script
+                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}`}
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag() {
+                            dataLayer.push(arguments);
+                        }
+                        gtag("js", new Date());
+                        gtag("config", "${process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}");
+                    `}
+                </Script>
+            </head>
             <body className={myFont.className}>
                 <ThemeContextProvider>
                     <ThemeProvider>
