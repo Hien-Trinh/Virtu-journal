@@ -22,9 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <GoogleAnalytics
-                gaId={process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}
-            />
+            <GoogleAnalytics gaId="G-LH91383GHC" />
             <body className={myFont.className}>
                 <ThemeContextProvider>
                     <ThemeProvider>
