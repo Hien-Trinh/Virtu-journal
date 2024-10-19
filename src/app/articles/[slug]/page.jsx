@@ -42,6 +42,9 @@ const SinglePage = ({ params }) => {
             <div className={styles.textContainer}>
                 <div className={styles.title}>{data?.title}</div>
                 <div className={styles.authors}>{data?.authors}</div>
+                <div className={styles.date_published}>
+                    {data?.date_published}
+                </div>
                 <div
                     className={styles.link}
                     onClick={() => {
@@ -62,7 +65,6 @@ const SinglePage = ({ params }) => {
                 </div>
             </div>
             <div className={styles.content}>
-                <div className={styles.infoContainer}></div>
                 <div className={styles.pdf}>
                     <iframe
                         src={data?.pdf_url}
@@ -71,15 +73,28 @@ const SinglePage = ({ params }) => {
                         allow="autoplay"
                     ></iframe>
                 </div>
-                <div className={styles.details}>
-                    <div className={styles.abstract}>
-                        <h2>Abstract</h2>
-                        <p>{data?.abstract}</p>
-                    </div>
-                    <div className={styles.keywords}>
-                        <h2>Keywords</h2>
-                        <p>{data?.keywords}</p>
-                    </div>
+                <div className={styles.infoContainer}>
+                    <details className={styles.details}>
+                        <summary className={styles.summary}>Abstract</summary>
+                        <div className={styles.detailContents}>
+                            <p>{data?.abstract}</p>
+                        </div>
+                    </details>
+
+                    <details className={styles.details}>
+                        <summary className={styles.summary}>Keywords</summary>
+                        <div className={styles.detailContents}>
+                            <p>
+                                {data?.keywords?.map((keyword, index) => (
+                                    <span key={index}>
+                                        {keyword}
+                                        <br />
+                                    </span>
+                                ))}
+                            </p>
+                        </div>
+                    </details>
+                    <div className={styles.details} />
                 </div>
             </div>
         </div>
