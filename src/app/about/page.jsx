@@ -1,10 +1,9 @@
 "use client"
 
-import React from "react"
-import styles from "./aboutPage.module.css"
-import Link from "next/link"
-import Header from "@/components/header/Header"
 import SideMenu from "@/components/aboutComponents/sideMenu/SideMenu"
+import Header from "@/components/header/Header"
+import Link from "next/link"
+import styles from "./aboutPage.module.css"
 
 const AboutPage = () => {
     const summary =
@@ -35,11 +34,8 @@ const AboutPage = () => {
                     <h1 className={styles.title}>About Virtù</h1>
                     <p className={styles.summary}>{summary}</p>
                     <div className={styles.aboutSubjects}>
-                        {aboutSubjects?.map((item) => (
-                            <div
-                                key={aboutSubjects._id}
-                                className={styles.textContainer}
-                            >
+                        {aboutSubjects?.map((item, index) => (
+                            <div key={index} className={styles.textContainer}>
                                 <Link href={`/about/${item.route}`}>
                                     <h1>{item.title}</h1>
                                 </Link>

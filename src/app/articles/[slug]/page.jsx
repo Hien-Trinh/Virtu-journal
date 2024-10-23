@@ -2,7 +2,7 @@
 import { db } from "@/utils/firebase"
 import { doc, getDoc } from "firebase/firestore"
 import { useEffect, useState } from "react"
-import styles from "./singlePage.module.css"
+import styles from "./articlesPage.module.css"
 
 const getData = async (slug) => {
     const docRef = doc(db, "articles", slug)
