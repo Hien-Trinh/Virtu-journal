@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.articleCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.publisher {
+    color: crimson;
+}
+
+.date_published {
+}
+
+.title {
+    font-size: 60px;
+}
+
+.authors {
+    font-size: 24px;
+    font-style: italic;
+    color: var(--softTextColor);
+}
+
+@media screen and (max-width: 1280px) {
+    .title {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        font-size: 36px;
+    }
+}

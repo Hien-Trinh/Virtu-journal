@@ -58,7 +58,7 @@ const TeamPage = () => {
         {
             _id: 8,
             name: "Nini Yiu",
-            role: "Sophomore",
+            role: "Assistant Editor",
             major: "English Literature",
             year: "Sophomore",
         },
@@ -89,6 +89,20 @@ const TeamPage = () => {
             role: "Associate Editor",
             major: "International Studies",
             year: "Junior",
+        },
+        {
+            _id: 13,
+            name: "Hannah Jenkins",
+            role: "Assistant Editor",
+            major: "Economics & Political Science",
+            year: "Junior",
+        },
+        {
+            _id: 14,
+            name: "Jerry Park Piano",
+            role: "Assistant Editor",
+            major: "International Studies",
+            year: "Senior",
         },
     ]
 
