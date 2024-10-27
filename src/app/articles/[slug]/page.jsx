@@ -1,6 +1,7 @@
 "use client"
 import { db } from "@/utils/firebase"
 import { doc, getDoc } from "firebase/firestore"
+import Image from "next/image"
 import { useEffect, useState } from "react"
 import styles from "./articlesPage.module.css"
 
@@ -80,7 +81,6 @@ const SinglePage = ({ params }) => {
                             <p>{data?.abstract}</p>
                         </div>
                     </details>
-
                     <details className={styles.details}>
                         <summary className={styles.summary}>Keywords</summary>
                         <div className={styles.detailContents}>
@@ -92,6 +92,23 @@ const SinglePage = ({ params }) => {
                                     </span>
                                 ))}
                             </p>
+                        </div>
+                    </details>
+                    <details className={styles.details}>
+                        <summary className={styles.summary}>Author</summary>
+                        <div className={styles.detailContents}>
+                            <Image
+                                src={`https://drive.google.com/uc?export=view&id=${data?.author_img_id}`}
+                                alt="Picture of the author"
+                                sizes="100vw"
+                                width={0}
+                                height={0}
+                                style={{
+                                    width: "100%",
+                                    height: "auto",
+                                }}
+                            ></Image>
+                            <p>{data?.author_bio}</p>
                         </div>
                     </details>
                     <div className={styles.details} />
