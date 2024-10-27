@@ -19,16 +19,7 @@ const Footer = () => {
                 </div>
                 <p className={styles.desc}>
                     Virtù, Macalester’s Journal of Transdisciplinary
-                    Explorations, is an annual publication led by students. I
-                    build this website so connect with me on{" "}
-                    <Link
-                        href="https://www.linkedin.com/in/hien-trinh-b35a4a206/"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        LinkedIn
-                    </Link>{" "}
-                    if you&apos;re cool.
+                    Explorations, is an annual publication led by students.{" "}
                 </p>
             </div>
             <div className={styles.links}>
