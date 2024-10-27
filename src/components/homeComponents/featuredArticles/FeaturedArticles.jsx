@@ -31,20 +31,20 @@ const FeaturedArticle = () => {
     return (
         <div className={styles.container}>
             {data?.map((article, index) => (
-                <div key={index}>
-                    <div className={styles.textContainer}>
-                        <h2>{article.title}</h2>
-                        <h2 className={styles.authors}>{article.authors}</h2>
-                    </div>
-                </div>
-            ))}
-            {data?.map((article, index) => (
                 <div key={index} className={styles.articleCard}>
-                    <div className={styles.title}>{article.title}</div>
-                    <div className={styles.authors}>{article.authors}</div>
-                    <div className={styles.authors}>
-                        <Link href={`/articles/${article.id}`}>Learn more</Link>
+                    <div className={styles.details}>
+                        <span className={styles.publisher}>Virtù</span>
+                        <span className={styles.date_published}>
+                            {" "}
+                            | {article.date_published}
+                        </span>
                     </div>
+                    <div className={styles.title}>
+                        <Link href={`/articles/${article.id}`}>
+                            {article.title}
+                        </Link>
+                    </div>
+                    <div className={styles.authors}>By {article.authors}</div>
                 </div>
             ))}
         </div>
