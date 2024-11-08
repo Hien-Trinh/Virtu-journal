@@ -1,0 +1,41 @@
+.content {
+    display: flex;
+    gap: 50px;
+}
+
+.aboutContent {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    text-align: left;
+}
+
+.summary {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+
+.aboutSubjects {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    border-bottom: 1px solid crimson;
+    width: max-content;
+}
