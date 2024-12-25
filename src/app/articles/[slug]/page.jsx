@@ -1,6 +1,7 @@
 "use client"
-import { db } from "@/utils/firebase"
+import { db, storage } from "@/utils/firebase"
 import { doc, getDoc } from "firebase/firestore"
+import { getDownloadURL, ref } from "firebase/storage"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import styles from "./articlesPage.module.css"
@@ -38,6 +39,22 @@ const SinglePage = ({ params }) => {
         }
     }, [copySuccess])
 
+    const [pdfUrl, setPdfUrl] = useState("")
+
+    useEffect(() => {
+        if (data?.article_name) {
+            const fetchPdfUrl = async () => {
+                const articleRef = ref(
+                    storage,
+                    `Articles/${data.article_name}.pdf`
+                )
+                const url = await getDownloadURL(articleRef)
+                setPdfUrl(url)
+            }
+            fetchPdfUrl()
+        }
+    }, [data])
+
     return (
         <div className={styles.container}>
             <div className={styles.textContainer}>
@@ -68,7 +85,7 @@ const SinglePage = ({ params }) => {
             <div className={styles.content}>
                 <div className={styles.pdf}>
                     <iframe
-                        src={data?.pdf_url}
+                        src={pdfUrl}
                         width="100%"
                         height="100%"
                         allow="autoplay"
