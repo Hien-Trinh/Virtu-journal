@@ -39,7 +39,8 @@ const SinglePage = ({ params }) => {
         }
     }, [copySuccess])
 
-    const [pdfUrl, setPdfUrl] = useState("")
+    const [articleUrl, setArticleUrl] = useState("")
+    const [authorImgUrl, setAuthorImgUrl] = useState("")
 
     useEffect(() => {
         if (data?.article_name) {
@@ -48,8 +49,15 @@ const SinglePage = ({ params }) => {
                     storage,
                     `Articles/${data.article_name}.pdf`
                 )
-                const url = await getDownloadURL(articleRef)
-                setPdfUrl(url)
+                const articleDownloadUrl = await getDownloadURL(articleRef)
+                setArticleUrl(articleDownloadUrl)
+
+                const authorImgRef = ref(
+                    storage,
+                    `AuthorPictures/${data.author_img_name}.png`
+                )
+                const authorImgDownloadUrl = await getDownloadURL(authorImgRef)
+                setAuthorImgUrl(authorImgDownloadUrl)
             }
             fetchPdfUrl()
         }
@@ -85,7 +93,7 @@ const SinglePage = ({ params }) => {
             <div className={styles.content}>
                 <div className={styles.pdf}>
                     <iframe
-                        src={pdfUrl}
+                        src={articleUrl}
                         width="100%"
                         height="100%"
                         allow="autoplay"
@@ -115,7 +123,7 @@ const SinglePage = ({ params }) => {
                         <summary className={styles.summary}>Author</summary>
                         <div className={styles.detailContents}>
                             <Image
-                                src={`https://drive.google.com/uc?export=view&id=${data?.author_img_id}`}
+                                src={authorImgUrl}
                                 alt="Picture of the author"
                                 sizes="100vw"
                                 width={0}
