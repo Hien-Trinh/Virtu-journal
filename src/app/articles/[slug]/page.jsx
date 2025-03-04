@@ -1,6 +1,7 @@
 "use client"
-import { db } from "@/utils/firebase"
+import { db, storage } from "@/utils/firebase"
 import { doc, getDoc } from "firebase/firestore"
+import { getDownloadURL, ref } from "firebase/storage"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import styles from "./articlesPage.module.css"
@@ -38,6 +39,30 @@ const SinglePage = ({ params }) => {
         }
     }, [copySuccess])
 
+    const [articleUrl, setArticleUrl] = useState("")
+    const [authorImgUrl, setAuthorImgUrl] = useState("")
+
+    useEffect(() => {
+        if (data?.article_name) {
+            const fetchPdfUrl = async () => {
+                const articleRef = ref(
+                    storage,
+                    `Articles/${data.article_name}.pdf`
+                )
+                const articleDownloadUrl = await getDownloadURL(articleRef)
+                setArticleUrl(articleDownloadUrl)
+
+                const authorImgRef = ref(
+                    storage,
+                    `AuthorPictures/${data.author_img_name}.png`
+                )
+                const authorImgDownloadUrl = await getDownloadURL(authorImgRef)
+                setAuthorImgUrl(authorImgDownloadUrl)
+            }
+            fetchPdfUrl()
+        }
+    }, [data])
+
     return (
         <div className={styles.container}>
             <div className={styles.textContainer}>
@@ -50,12 +75,12 @@ const SinglePage = ({ params }) => {
                     className={styles.link}
                     onClick={() => {
                         navigator.clipboard.writeText(
-                            `https://virtu.org/articles/${data?.id}`
+                            `https://virtujournal.org/articles/${data?.id}`
                         )
                         setCopySuccess("Copied!")
                     }}
                 >
-                    https://virtu.org/articles/{data?.id}
+                    https://virtujournal.org/articles/{data?.id}
                     <div
                         className={`${styles.copyConfirm} ${
                             copySuccess ? styles.show : null
@@ -68,7 +93,7 @@ const SinglePage = ({ params }) => {
             <div className={styles.content}>
                 <div className={styles.pdf}>
                     <iframe
-                        src={data?.pdf_url}
+                        src={articleUrl}
                         width="100%"
                         height="100%"
                         allow="autoplay"
@@ -98,7 +123,7 @@ const SinglePage = ({ params }) => {
                         <summary className={styles.summary}>Author</summary>
                         <div className={styles.detailContents}>
                             <Image
-                                src={`https://drive.google.com/uc?export=view&id=${data?.author_img_id}`}
+                                src={authorImgUrl}
                                 alt="Picture of the author"
                                 sizes="100vw"
                                 width={0}
