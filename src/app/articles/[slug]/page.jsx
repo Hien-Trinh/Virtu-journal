@@ -75,12 +75,12 @@ const SinglePage = ({ params }) => {
                     className={styles.link}
                     onClick={() => {
                         navigator.clipboard.writeText(
-                            `https://virtu.org/articles/${data?.id}`
+                            `https://virtujournal.org/articles/${data?.id}`
                         )
                         setCopySuccess("Copied!")
                     }}
                 >
-                    https://virtu.org/articles/{data?.id}
+                    https://virtujournal.org/articles/{data?.id}
                     <div
                         className={`${styles.copyConfirm} ${
                             copySuccess ? styles.show : null
